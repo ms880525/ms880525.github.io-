@@ -7,23 +7,12 @@
 <link rel="stylesheet" href="css/contact.css">
 <link rel="stylesheet" href="css/background.css">
 </head> 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-    console.log('1232');
-  } else {
-    x.className = "topnav";
-    console.log('1231');
-  }
-}
-</script>
-<body> 
-<div id="wrapper">
-<nav >
-     <ul  class="menu" >
-        <li><a href="index.html">首頁</a></li>
+<body>
+<nav class="menu">
+     <a id="menubtn" class="toggle-nav" href="#">☰</a>
+     <div class="menu-logo"><a>LOGO</a></div>
+     <ul id="menuUl" class="active">
+        <li class="current-active"><a href="index.html">首頁</a></li>
         <li><a href="shop.html">商鋪資訊</a></li>
         <li><a href="#content">關於我們</a></li>
         <li><a href="news.html">近期活動</a></li>
@@ -32,6 +21,7 @@ function myFunction() {
         <li><a href="contact.html">聯絡方式</a></li>        
       </ul>
 </nav>
+<div id="wrapper">
 <div class="container">
   <div id="con"><h2>聯絡我們</h2></div>
   <form action="https://formspree.io/ms880525@gmail.com" method="POST">
@@ -106,5 +96,5 @@ function myFunction() {
 </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/slideshow.js"></script>
+<script src="js/contract.js"></script>
 </html>

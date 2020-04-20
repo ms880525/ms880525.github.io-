@@ -34,31 +34,42 @@ nav li a {
   text-decoration: none;
   padding: 0.5em 1em;       
 }
-
-/*底線滑動
-nav li a {
-text-decoration: none;
-position: relative;
-}
-
-nav li a:after {
-content: '';
-position: absolute;
-bottom: -2px;
-left: 0;
-width: 0%;
-border-bottom: 3px solid black;
-transition: 0.3s;
-}
-nav li a:hover:after {
-width: 100%;
-}*/
-
 header {
-  height: 69vh ;
+  height: 40em;
   /*border: 1px solid blue;*/
 }
 
+
+#left2{
+  margin: 0 10em;
+  height: 40em ;
+  width: 80%;
+  /*border: 1px solid red;*/
+}
+.news_title{
+  height: 4em;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+
+#news{
+  height: 36em;
+  width: 80%;
+  /*border: 2px solid yellow;*/
+  margin: 0 6.8em;
+  overflow:auto;
+}
+#news a{
+  text-decoration: none; 
+  color: #5C7956;
+}
+#news dl{
+  margin: 20px 0;
+}
+#news dt{
+  margin: 10px 0;
+}
 
 footer {
   height: 15em;

@@ -1,4 +1,3 @@
-  
 var data = ''; // 儲存 xhr 拉回來的 json 資料
 const list = document.getElementById('list');
 const favorite = document.getElementById('favorite');

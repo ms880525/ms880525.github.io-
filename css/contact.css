@@ -12,15 +12,24 @@ div#wrapper {
   width: 95vw;
 }
 
-nav {
+.menu {
   margin: 0;
   height: 6vh;
+  width: 100%;
+  display: flex;
   /*border: 1px solid red;*/
+}
+.menu-logo {
+    margin: auto;
+    margin-left: 0px;
+    padding: 10px 10px 10px 20px;
+}
+.toggle-nav {
+    display: none;
 }
 /* 導航列 */
 nav ul {
-  margin: 0 auto;
-  text-align: right;
+  margin: 0;
 }
 
 nav li {
@@ -33,10 +42,9 @@ nav li a {
   display: block;           
   color: black;
   text-decoration: none;
-  padding: 0.5em 1em;       
-}
-
-
+  padding: 0.5em 1em; 
+  cursor: pointer;
+} 
 
 .container {
   margin: auto 10vw;
@@ -116,10 +124,44 @@ input[type=submit]:hover {
     width: 18%;
   }
   
- 
 }
 
-
+@media screen and (max-width: 767px) {
+    .menu {
+        width: 85%;
+        margin: 0 2.5em;
+        display: inline-block;
+    }
+    .toggle-nav {
+        position: absolute;
+        left: 4%;
+        color: #5C7956;
+        text-decoration: none;
+        line-height: 40px;
+    }
+    
+    .menu ul.active {
+        display: none;
+    }
+    .menu ul {
+        left: 0px;
+        padding: 10px 25px;
+        margin-top: -5px;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+        border-radius: 0px 0px 3px 3px;
+        background: #EFEFF0;
+    }
+     
+    .menu li {
+        margin: 10px 0px 10px 0px;
+        float: none;
+        display: block;
+    }
+    .menu a {
+      text-align: center;
+        display: block;
+    }
+}
 
 
 header img{
