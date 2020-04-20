@@ -10,19 +10,18 @@ $(document).ready(function() {
 		} else {
 			$('#BackTop').stop().fadeOut(222);
 		}
+       
+         $('.fade').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_object ){
+                $(this).addClass('showme');
+            }
+            if( bottom_of_window < bottom_of_object ){
+                $(this).removeClass('showme');
+            }
+        })
 	}).scroll(); 
-    
-    /*$(window).scroll(function() {
-		if ( $(this).scrollTop() > 350 ){
-			$('nav').fadeIn(222);
-		} else {
-			$('nav').stop().fadeOut(222);
-            $('nav').css({
-              'background':'#EFEFF0',
-            })
-		}
-	}).scroll();*/
-    
 });
 
 

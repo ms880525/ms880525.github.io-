@@ -21,6 +21,7 @@ html, body {
 	right: 1rem;
 	bottom: 1rem;
 	display: none;
+    z-index: 1;
 }
 /*箭頭粗細*/
 .toTop-arrow::before, .toTop-arrow::after {
@@ -40,7 +41,21 @@ html, body {
 	transform: rotate(45deg) translate(0, -50%);
 	right: 0.5rem;
 }
-.toTop-arrow:focus {outline: none;}
+.toTop-arrow:focus {outline: none;
+}
+
+.fade {
+  margin: 50px;
+  padding: 50px;
+  opacity:0;
+  transition: 0.5s;
+}
+
+.showme {
+  opacity:1!important;
+  transition: 0.8s;
+}
+
 
 div#wrapper {
   margin: 0 auto;
