@@ -4,6 +4,7 @@
 
 html, body {
   height: 100%;
+  margin: 0;
 }
 
 div#wrapper {
@@ -12,18 +13,19 @@ div#wrapper {
 }
 
 nav {
-  height: 4em;
+  height: 6vh;
  /* border-b: 1px solid red;*/
 }
 /* 導航列 */
 nav ul {
-  margin: 10px auto;
+  margin: 0 auto;
   text-align: right;
 }
 
 nav li {
   display: inline-block;
-  margin-right: 0.5em;        
+  margin-right: 0.5em; 
+  margin-top: 0.5em;
 }
 
 nav li a {                 
@@ -52,13 +54,14 @@ nav li a:hover:after {
 width: 100%;
 }*/
 header {
- height: 60em ;
+ height: 63em ;
   /*border: 1px solid blue;*/
 }
 
 div#opt{
   /*border: 1px solid green;*/
   height: 5em;
+  
 }
 
 div#opt ul{
@@ -89,7 +92,7 @@ div #container li {
   display:inline-block;  
 }
 div#container{
-  height: 55em;
+  height: 57em;
   overflow: auto;
 }
 
@@ -97,6 +100,7 @@ h1{
   width: 20%;
   text-align: center;
   margin: auto;
+  margin-bottom: 20px;
   border-bottom: 2px solid black;
 }
 

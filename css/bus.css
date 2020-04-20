@@ -4,6 +4,7 @@
 
 html, body {
   height: 100%;
+  margin: 0;
 }
 
 div#wrapper {
@@ -17,13 +18,14 @@ nav {
 }
 /* 導航列 */
 nav ul {
-  margin: 10px auto;
+  margin: 0 auto;
   text-align: right;
 }
 
 nav li {
   display: inline-block;
-  margin-right: 0.5em;        
+  margin-right: 0.5em;
+  margin-top: 0.5em;
 }
 
 nav li a {                 
@@ -77,15 +79,13 @@ div #bottom{
   /*border: 2px solid blue;*/
   overflow:auto;
 }
-::-webkit-scrollbar {
-      width: 15px;
-}
+
 
 iframe{
   position:relative;
   left: 15vw;
   top:  4.5vh;
-  width: 38em;
+  width: 35.5vw;
   border: 6px solid red;
 }
 #bottom ul{
@@ -128,26 +128,6 @@ iframe{
   input.search:focus {
     -webkit-box-shadow: 2px 2px 5px #5e5e66;
             box-shadow: 2px 2px 5px #5e5e66; }
-@media (max-width: 768px) {
-  .card {
-    padding: 0 20px 10px 20px; }
-    .card p {
-      margin: 0px 0 10px 30px; } 
-      #container {
-          width: 720px;}
-          P{ font-size:10px;}
-          #transport{width: 50%}   
-      }
-      
-
-@media (max-width: 375px) {
-  .card {
-    padding: 0 15px 10px 15px; }
-    .card p {
-      margin: px 0 10px 30px; }
-    .card .fa-thumb-tack {
-      top: 50px; } }
-
 /*底線滑動
 nav li a {
 text-decoration: none;

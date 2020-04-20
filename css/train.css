@@ -4,6 +4,7 @@
 
 html, body {
   height: 100%;
+  margin: 0;
 }
 
 div#wrapper {
@@ -17,13 +18,14 @@ nav {
 }
 /* 導航列 */
 nav ul {
-  margin: 10px auto;
+  margin: 0 auto;
   text-align: right;
 }
 
 nav li {
   display: inline-block;
-  margin-right: 0.5em;        
+  margin-right: 0.5em;
+  margin-top: 0.5em;
 }
 
 nav li a {                 
