@@ -1,0 +1,88 @@
+<!doctype html> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<link rel="icon" href="img/logo.ico" type='img/logo.ico'/>
+<title>台中醬子玩</title>
+<link rel="stylesheet" href="css/shop.css">
+<link rel="stylesheet" href="css/background.css">
+<link rel="stylesheet" href="css/shop1.css">
+<link rel="stylesheet" href="css/shop2.css">
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript">
+$(function() {
+    $(".flexslider").flexslider({
+		slideshowSpeed: 4000, //展示时间间隔ms
+		animationSpeed: 400, //滚动时间ms
+		touch: true //是否支持触屏滑动
+	});
+});	
+</script>
+</head> 
+<body> 
+<div id="wrapper">
+  <nav>
+      <ul class="menu">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="shop.html">商鋪資訊</a></li>
+        <li><a href="index.html"#content>關於我們</a></li>
+        <li><a href="news.html">近期活動</a></li>
+        <li><a href="traffic.html">交通資訊</a></li>
+        <li><a href="#">聯絡方式</a></li>
+      </ul>
+  </nav>
+  <header>
+    <div id="opt">
+      <ul>
+        <li id="menu"><a href="shop.html">樓層</a></li>
+        <li id="menu"><a href="packing.html">類別</a></li>
+      </ul>
+    </div>
+    <div id="main">
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          <div id="box">
+            <img id="floor1" src="img/1F.png">
+            <img id="shop" src="img/store.png">
+            <img id="shop1" src="img/store.png">
+            <img id="shop2" src="img/store.png">
+            <img id="shop3" src="img/store.png">
+            <img id="shop4" src="img/store.png">
+          </div> 
+        </li>
+        <li>
+          <div id="box1">
+            <img id="floor2" src="img/2F.png">
+            <img id="shop5" src="img/store.png">
+            <img id="shop6" src="img/store.png">
+            <img id="shop7" src="img/store.png">
+          </div> 
+        </li>
+      </ul>
+    </div>
+  </div>
+  </header> 
+  <footer>
+        <div id="text">
+        </div>
+        <div id="tel" >
+          <strong>
+            <ul>
+              <li>Tel</li><br>
+              <li>+886-4-37075580</li><br>
+              <li>Add</li><br>
+              <li>台中市大里區科技路1號</li><br>
+              <li>Flow us</li><br>
+              <li><a href="https://www.facebook.com/%E5%8F%B0%E4%B8%AD%E9%86%AC%E5%AD%90%E7%8E%A9%E5%A4%A7%E9%87%8C%E5%9C%92%E5%8D%80-104853350909723/" target="_blank">
+              <img id='fb' src="img/fb.png"  width="5%">
+              </a>
+              </li>
+            </ul>    
+          </strong>
+        </div>
+  </footer>
+</div>
+</body>
+</html>

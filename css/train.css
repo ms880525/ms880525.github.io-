@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+div#wrapper {
+  margin: 0 auto;
+  width: 95vw;
+}
+
+nav {
+  height: 6vh;
+  /*border: 1px solid red;*/
+}
+/* 導航列 */
+nav ul {
+  margin: 10px auto;
+  text-align: right;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 0.5em;        
+}
+
+nav li a {                 
+  display: block;           
+  color: black;
+  text-decoration: none;
+  padding: 0.5em 1em;       
+}
+
+/*底線滑動
+nav li a {
+text-decoration: none;
+position: relative;
+}
+
+nav li a:after {
+content: '';
+position: absolute;
+bottom: -2px;
+left: 0;
+width: 0%;
+border-bottom: 3px solid black;
+transition: 0.3s;
+}
+nav li a:hover:after {
+width: 100%;
+}*/
+
+header {
+  height: 69vh;
+  border-top: 1px solid black;
+}
+
+div #container{
+  width: 70%;
+  height: 69vh;
+  margin-left: auto;
+  margin-right: auto;
+  /*border: 5px solid pink;*/
+}
+
+div #top{
+  height: 30%;
+  border-bottom: 1px solid gray;
+}
+
+div #left{
+  width:42%;
+  height: 100%;
+  float:left;
+  /*border: 1px solid green;*/
+}
+
+img#transport{
+  height: 100%;
+  position:relative;
+  left:30%;
+  /*border: 1px solid black;*/
+}
+
+div #right{
+  width:58%;
+  height: 100%;
+  float:right;
+  font-size: 20px;
+  /*border: 1px solid green;*/
+}
+
+div #bottom{
+  height: 70%;
+  margin: auto;
+  /*border: 1px solid blue;*/
+}
+
+iframe{
+  position:relative;
+  left: 15vw;
+  top: 3.5vh
+}
+footer {
+  height: 15em;
+  border-top: 1px solid black;
+}
+
+div #tel{
+  width: 30%;
+  height: 15em;
+  float: right;
+  border-left: 1px solid black;
+}
+div #tel ul{
+  list-style:none;
+}
+

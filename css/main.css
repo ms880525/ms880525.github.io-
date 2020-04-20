@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+div#wrapper {
+  margin: 0 auto;
+  width: 80%;
+}
+
+nav {
+  height: 4em;
+  border: 1px solid red;
+}
+/* 導航列 */
+nav ul {
+  margin: 10px auto;
+  text-align: right;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 0.5em;        
+}
+
+nav li a {                 
+  display: block;           
+  color: black;
+  text-decoration: none;
+  padding: 0.5em 1em;       
+}
+
+/*底線滑動*/
+nav li a {
+text-decoration: none;
+position: relative;
+}
+
+nav li a:after {
+content: '';
+position: absolute;
+bottom: -2px;
+left: 0;
+width: 0%;
+border-bottom: 3px solid black;
+transition: 0.3s;
+}
+nav li a:hover:after {
+width: 100%;
+}
+
+header {
+  height: 18em;
+  border: 1px solid blue;
+}
+
+
+aside{
+  width: 50%;
+  height: 20em;
+  float: left;
+  border: 1px solid green;
+}
+
+div#content{
+  width: 50%;
+  height: 20em;
+  float: left;
+  border: 1px solid brown;
+}
+
+
+div#container {
+  overflow: auto;
+}
+
+
+
+footer {
+  height: 15em;
+  border: 1px solid olive;
+}
+
+div #tel{
+  width: 30%;
+  height: 15em;
+  float: right;
+  border: 1px solid black;
+}
+div #tel ul{
+  list-style:none;
+}
+
+
+
+

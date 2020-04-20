@@ -1,0 +1,69 @@
+<!doctype html> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<link rel="icon" href="img/logo.ico" type='img/logo.ico'/>
+<title>台中醬子玩</title>
+<link rel="stylesheet" href="css/bus.css">
+<link rel="stylesheet" href="css/background.css">
+</head> 
+<body> 
+<div id="wrapper">
+  <nav>
+      <ul class="menu">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="shop.html">商鋪資訊</a></li>
+        <li><a href="index.html"#content>關於我們</a></li>
+        <li><a href="news.html">近期活動</a></li>
+        <li><a href="traffic.html">交通資訊</a></li>
+        <li><a href="#">聯絡方式</a></li>
+      </ul>
+  </nav>
+  <header>
+    <div id="container">
+      <div id="top">
+        <div id="left">
+          <img id="transport" src="img/22.png" width="180" height="180">
+        </div>
+        <div id="right">
+          <p>1.搭乘50、53、107、108、132、201、248號公<br>&nbsp;&nbsp;&nbsp;車抵達「大里圖書館站」下車<br>&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://citybus.taichung.gov.tw/iTravel/RealRoute.aspx">公車時刻表</a> <button id="btn1" type="button">公車時刻表</button></p>
+          <p>2.步行至台中軟體園區Dali Art藝術廣場</p>
+        </div>
+      </div>
+      <div id="bottom">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3642.479411016859!2d120.69396621498771!3d24.08463058442575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693cbb36cda2c3%3A0x2a703ebcb25ba3e0!2zRGFsaSBBcnTol53ooZPlu6PloLQgfCDntpPmv5_pg6jlj7DkuK3ou5_pq5TlnJLljYA!5e0!3m2!1szh-TW!2stw!4v1584374819656!5m2!1szh-TW!2stw" width="666" height="320" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="row">
+        <h2>請輸入路線編號</h2>
+        <input type="text" placeholder="請輸入欲查詢之公車路線" class="search"/>
+        <ul id="favorite" ></ul>
+        <ul id="list"></ul>
+        </div>
+        </div>
+    </div>
+  </header> 
+  <footer>
+        <div id="text">
+        </div>
+        <div id="tel" >
+          <strong>
+            <ul>
+              <li>Tel</li><br>
+              <li>+886-4-37075580</li><br>
+              <li>Add</li><br>
+              <li>台中市大里區科技路1號</li><br>
+              <li>Flow us</li><br>
+              <li><a href="https://www.facebook.com/%E5%8F%B0%E4%B8%AD%E9%86%AC%E5%AD%90%E7%8E%A9%E5%A4%A7%E9%87%8C%E5%9C%92%E5%8D%80-104853350909723/" target="_blank">
+              <img id='fb' src="img/fb.png"  width="5%">
+              </a>
+              </li>
+            </ul>    
+          </strong>
+        </div>
+  </footer>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+<script src="js/bus.js"></script>
+<script src="js/api.js"></script>
+</html>

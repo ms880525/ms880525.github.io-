@@ -1,0 +1,47 @@
+html, body {
+  background: #EADCD9;
+  /*COLOR CODES
+  #EBEBEB
+  #A6C794
+  #5C7956
+  #B0A298
+  #D6C7C0
+  #EADCD9*/
+}
+nav {
+  
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 1;
+  background:#EFEFF0;
+  /*border: 1px solid red;*/
+}
+/*底線滑動*/
+nav li a {
+text-decoration: none;
+position: relative;
+color: #5C7956;
+}
+
+nav li a:after {
+content: '';
+position: absolute;
+bottom: -2px;
+left: 0;
+width: 0%;
+border-bottom: 3px solid;
+color: #B0A298;
+transition: 0.3s;
+}
+nav li a:hover:after {
+width: 100%;
+}
+
+  @media screen and (max-width: 690px) {
+    nav ul a {
+      text-align: center;
+      font-size:11px;   
+    }
+    nav li {margin:0;}
+}
