@@ -150,6 +150,7 @@ div#content{
   /*border: 1px solid brown;*/
   text-align: left;
   line-height: 45px;
+  overflow:auto;
 }
 
 div#content ul {
@@ -158,7 +159,10 @@ div#content ul {
 }
 
 div#container {
-  overflow: auto;
+  margin: 0;
+  height: 35em;
+  /*border: 1px solid blue;*/
+  
 }
 div#page1{
   height: 22em;
@@ -189,7 +193,11 @@ footer {
   height: 15em;
   border-top: 1px solid gray;
 }
-
+div #text{
+  height: 15em;
+  width: 70%;
+  float: left;
+}
 div #tel{
   width: 30%;
   height: 15em;
@@ -201,9 +209,64 @@ div #tel ul{
   list-style:none; 
 }
 
-  @media screen and (max-width: 690px) {
+  @media screen and (max-width: 767px) {
     p,h2,h3,h4{
-      font-size: 10px;
+      font-size: 12px;
     }
-}
+    div #page1{
+      height: 24em;
+      margin: 0;
+      text-align: center;
+      /*border: 1px solid black*/
+    }
+    div #left,aside{
+      width: 100%;
+      float: none;
+    
+    }
+    aside{
+      height: 15em;
+    }
+    div #right,div #content{
+      width: 100%;
+      /*border: 1px solid black;*/
+      float: none;
+    }
+    div #content{
+      height: 30em;
+    }
+    div #container{
+      height: 45.5em;
+      margin: 0;
+      text-align: center;
+     
+    }
+    div #page3  {
+      padding: 15px;
+      margin: 0;
+      height: 20em;
+      
+    }
+    div #text{
+      display: none;
+      width: 100%;
+      float: none;
+      border:none;
+    }
+    div #tel{
+      text-align: center;
+      width: 100%;
+      border:none;
+      float: none;
+    }
+    nav {
+      margin: 7px auto;
+      height: 2em;
+    }
+    .menu li{
+      margin-right:0;
+    }
+       
+    
+  }
 

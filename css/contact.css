@@ -126,7 +126,7 @@ input[type=submit]:hover {
   
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
     .menu {
         width: 85%;
         margin: 0 2.5em;
@@ -161,6 +161,7 @@ input[type=submit]:hover {
       text-align: center;
         display: block;
     }
+    
 }
 
 
